@@ -1,0 +1,29 @@
+.fade-into-view {
+	/* Transition */
+	-webkit-transition: all 0.75s;
+	-moz-transition: all 0.75s;
+	-o-transition: all 0.75s;
+    transition: all 0.75s;
+}
+
+.fade-into-view.fade-out-blur {
+	/* Blur filter */
+	filter: blur(3px);
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: url("svg/blur.svg#blur-3");
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+}
+
+.fade-into-view.fade-in-blur {
+	/* Blur filter */
+	filter: blur(0px);
+	-webkit-filter: blur(0px);
+	-moz-filter: blur(0px); 
+	-o-filter: blur(0px); 
+	-ms-filter: blur(0px);
+	filter: url("svg/blur.svg#blur-0");
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+}
